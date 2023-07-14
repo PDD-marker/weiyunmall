@@ -13,11 +13,16 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>weiyunmall-third-party</module>
         <module>weiyunmall-coupon</module>
         <module>weiyunmall-member</module>
         <module>weiyunmall-order</module>
         <module>weiyunmall-product</module>
         <module>weiyunmall-ware</module>
+        <module>renren-fast</module>
+        <module>renren-generator</module>
+        <module>weiyunmall-common</module>
+        <module>weiyunmall-gateway</module>
     </modules>
     
 </project>

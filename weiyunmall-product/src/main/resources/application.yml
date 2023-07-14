@@ -1,0 +1,32 @@
+spring:
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://192.168.80.138:3306/weiyunmall_pms?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848 #注册中心的地址
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+#    alicloud:
+#      access-key: LTAI5t5qdN2hrzbroFsgfx2z
+#      secret-key: bZ1hkj81baB3eVfhWn7zvd4EKbDV1t
+#      oss:
+#        endpoint: oss-cn-shanghai.aliyuncs.com
+#        bucket-name: weiyunmall
+mybatis-plus:
+  mapper-locations: classpath:/mapper/**/*.xml
+  global-config:
+    db-config:
+      id-type: auto #主键自增
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+server:
+  port: 10000
+logging:
+  level:
+    com.taotao.weiyunmall: debug
+include-binding-errors: always
+include-message: always

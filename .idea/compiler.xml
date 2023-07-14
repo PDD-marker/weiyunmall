@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+    <excludeFromCompile>
+      <directory url="file://$PROJECT_DIR$/weiyunmall-common/src/main/resources/archetype-resources" includeSubdirectories="true" />
+    </excludeFromCompile>
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -9,17 +13,21 @@
         <module name="weiyunmall-coupon" />
         <module name="weiyunmall-ware" />
         <module name="weiyunmall-order" />
-        <module name="weiyunmall-product" />
         <module name="weiyunmall-member" />
+        <module name="weiyunmall-common" />
+        <module name="renren-fast" />
+        <module name="weiyunmall-third-party" />
+        <module name="weiyunmall-product" />
+        <module name="weiyunmall-gateway" />
+        <module name="renren-generator" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="8">
-      <module name="weiyunmall" target="1.5" />
-      <module name="weiyunmall-coupon" target="1.8" />
-      <module name="weiyunmall-member" target="1.8" />
-      <module name="weiyunmall-order" target="1.8" />
-      <module name="weiyunmall-product" target="1.8" />
-      <module name="weiyunmall-ware" target="1.8" />
-    </bytecodeTargetLevel>
+    <bytecodeTargetLevel target="8" />
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="renren-fast" options="-parameters" />
+      <module name="renren-generator" options="-parameters" />
+    </option>
   </component>
 </project>

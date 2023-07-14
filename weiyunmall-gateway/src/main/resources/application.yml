@@ -1,0 +1,46 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+#        - id: baidu_route
+#          uri: https://www.baidu.com
+#          predicates:
+#            - Query=uri
+
+        - id: product_route
+          uri: lb://weiyunmall-product #这部分lb表示负载均衡，后面直接接上要跳转的服务名
+          predicates:
+            - Path=/api/product/**
+          filters: #路径重写
+            - RewritePath=/api/?(?<segment>.*), /$\{segment}
+
+        - id: third_party_route
+          uri: lb://weiyunmall-third-party
+          predicates:
+            - Path=/api/thirdparty/**
+          filters:
+            - RewritePath=/api/thirdparty/?(?<segment>.*), /$\{segment}
+
+        - id: member_route
+          uri: lb://weiyunmall-member
+          predicates:
+            - Path=/api/member/**
+          filters:
+            - RewritePath=/api/?(?<segment>.*), /$\{segment}
+
+        - id: ware_route
+          uri: lb://weiyunmall-ware
+          predicates:
+            - Path=/api/ware/**
+          filters:
+            - RewritePath=/api/?(?<segment>.*), /$\{segment}
+
+
+        - id: admin_route
+          uri: lb://renren-fast #这部分lb表示负载均衡，后面直接接上要跳转的服务名
+          predicates:
+            - Path=/api/**
+          filters:  #路径重写
+            - RewritePath=/api/?(?<segment>.*), /renren-fast/$\{segment}
+#前端发送的请求：http://localhost:88/api/captcha.jpg http://renren-fast:8080/captcha.jpg
+#http://localhost:88/api/product/category/list/tree http://localhost:10000/product/category/list/tree

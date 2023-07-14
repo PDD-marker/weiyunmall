@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/renren-fast/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/renren-generator/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/weiyunmall-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/weiyunmall-common/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/weiyunmall-coupon/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/weiyunmall-coupon/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/weiyunmall-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/weiyunmall-gateway/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/weiyunmall-member/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/weiyunmall-member/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/weiyunmall-order/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/weiyunmall-order/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/weiyunmall-product/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/weiyunmall-product/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/weiyunmall-third-party/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/weiyunmall-third-party/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/weiyunmall-ware/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/weiyunmall-ware/src/main/resources" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
