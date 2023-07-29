@@ -19,6 +19,7 @@
         <module name="weiyunmall-third-party" />
         <module name="weiyunmall-search" />
         <module name="weiyunmall-product" />
+        <module name="demo" />
         <module name="weiyunmall-gateway" />
         <module name="renren-generator" />
       </profile>
