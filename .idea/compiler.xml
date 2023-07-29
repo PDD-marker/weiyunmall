@@ -17,6 +17,7 @@
         <module name="weiyunmall-common" />
         <module name="renren-fast" />
         <module name="weiyunmall-third-party" />
+        <module name="weiyunmall-search" />
         <module name="weiyunmall-product" />
         <module name="weiyunmall-gateway" />
         <module name="renren-generator" />

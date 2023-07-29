@@ -42,5 +42,15 @@ spring:
             - Path=/api/**
           filters:  #路径重写
             - RewritePath=/api/?(?<segment>.*), /renren-fast/$\{segment}
+
+        - id: weiyunmall_host_route
+          uri: lb://weiyunmall-product #这部分lb表示负载均衡，后面直接接上要跳转的服务名
+          predicates:
+            - Host=weiyunmall.com #路由断言
+
+        - id: weiyunmall_search_route
+          uri: lb://weiyunmall-search #这部分lb表示负载均衡，后面直接接上要跳转的服务名
+          predicates:
+            - Host=search.weiyunmall.com #路由断言
 #前端发送的请求：http://localhost:88/api/captcha.jpg http://renren-fast:8080/captcha.jpg
 #http://localhost:88/api/product/category/list/tree http://localhost:10000/product/category/list/tree

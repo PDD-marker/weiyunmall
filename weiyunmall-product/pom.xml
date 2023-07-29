@@ -54,13 +54,48 @@
             <!-- 此处改为自定义SpringBoot版本 -->
             <version>2.6.13</version>
         </dependency>
-<!--        <dependency>-->
+
+
+        <!--模板引擎：thymeleaf-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
+
+<!--        页面修改在不重启服务器的情况下实时更新-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+<!--        引入redis作为缓存-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+
+        <!-- 使用Redisson -->
+        <dependency>
+            <groupId>org.redisson</groupId>
+            <artifactId>redisson-spring-boot-starter</artifactId>
+            <version>3.17.3</version>
+        </dependency>
+
+        <!-- SpringCache依赖 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-cache</artifactId>
+        </dependency>
+
+
+        <!--        <dependency>-->
 <!--            <groupId>com.baomidou</groupId>-->
 <!--            <artifactId>mybatis-plus-extension</artifactId>-->
 <!--            <version>3.4.2</version>-->
 <!--        </dependency>-->
 
-        <!--        <dependency>-->
+<!--        <dependency>-->
 <!--            <groupId>com.alibaba.cloud</groupId>-->
 <!--            <artifactId>spring-cloud-starter-alicloud-oss</artifactId>-->
 <!--            <version>1.5.1.RELEASE</version>-->

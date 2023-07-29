@@ -3,7 +3,6 @@ package com.taotao.weiyunmall.product.controller;
 import java.util.Arrays;
 import java.util.Map;
 
-//import org.apache.shiro.authz.annotation.RequiresPermissions;
 import com.taotao.weiyunmall.product.service.CategoryBrandRelationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -53,7 +52,6 @@ public class AttrAttrgroupRelationController {
     //@RequiresPermissions("product:attrattrgrouprelation:info")
     public R info(@PathVariable("id") Long id){
 		AttrAttrgroupRelationEntity attrAttrgroupRelation = attrAttrgroupRelationService.getById(id);
-
         return R.ok().put("attrAttrgroupRelation", attrAttrgroupRelation);
     }
 

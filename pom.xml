@@ -23,6 +23,7 @@
         <module>renren-generator</module>
         <module>weiyunmall-common</module>
         <module>weiyunmall-gateway</module>
+        <module>weiyunmall-search</module>
     </modules>
     
 </project>

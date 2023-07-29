@@ -3,6 +3,7 @@ package com.taotao.weiyunmall.product.service;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.taotao.common.utils.PageUtils;
 import com.taotao.weiyunmall.product.entity.CategoryEntity;
+import com.taotao.weiyunmall.product.vo.Catelog2Vo;
 
 import java.util.List;
 import java.util.Map;
@@ -26,5 +27,9 @@ public interface CategoryService extends IService<CategoryEntity> {
     Long[] findCatelogPath(Long attrGroupId1);
 
     void updateDetail(CategoryEntity category);
+
+    List<CategoryEntity> getLevel1Categorys();
+
+    Map<String, List<Catelog2Vo>> getCatalogJson();
 }
 
