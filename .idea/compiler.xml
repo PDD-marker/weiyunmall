@@ -19,12 +19,13 @@
         <module name="weiyunmall-third-party" />
         <module name="weiyunmall-search" />
         <module name="weiyunmall-product" />
-        <module name="demo" />
         <module name="weiyunmall-gateway" />
         <module name="renren-generator" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
+      <module name="demo" target="1.8" />
+      <module name="demo1" target="1.8" />
       <module name="test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
