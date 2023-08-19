@@ -29,8 +29,8 @@ class WeiyunmallThirdPartyApplicationTests {
 //        // 强烈建议不要把访问凭证保存到工程代码里，否则可能导致访问凭证泄露，威胁您账号下所有资源的安全。
 //        // 本代码示例以从环境变量中获取访问凭证为例。运行本代码示例之前，请先配置环境变量。
 //        // RAM用户的访问密钥（AccessKey ID和AccessKey Secret）。
-//        String accessKeyId = "LTAI5t5qdN2hrzbroFsgfx2z";
-//        String accessKeySecret = "bZ1hkj81baB3eVfhWn7zvd4EKbDV1t";
+//        String accessKeyId = "";
+//        String accessKeySecret = "";
 //        // 使用代码嵌入的RAM用户的访问密钥配置访问凭证。
 //        CredentialsProvider credentialsProvider = new DefaultCredentialProvider(accessKeyId, accessKeySecret);
 //        // 填写Bucket名称，例如examplebucket。
