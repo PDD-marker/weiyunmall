@@ -21,10 +21,10 @@ spring:
       time-to-live: 60000
       cache-null-values: true #防止缓存穿透
 #    alicloud:
-#      access-key: LTAI5t5qdN2hrzbroFsgfx2z
-#      secret-key: bZ1hkj81baB3eVfhWn7zvd4EKbDV1t
+#      access-key: *****
+#      secret-key: *****
 #      oss:
-#        endpoint: oss-cn-shanghai.aliyuncs.com
+#        endpoint: ******
 #        bucket-name: weiyunmall
 mybatis-plus:
   mapper-locations: classpath:/mapper/**/*.xml
