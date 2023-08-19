@@ -4,10 +4,10 @@ spring:
       discovery:
         server-addr: localhost:8848
     alicloud:
-      access-key: LTAI5t5qdN2hrzbroFsgfx2z
-      secret-key: bZ1hkj81baB3eVfhWn7zvd4EKbDV1t
+      access-key: 保密
+      secret-key: 保密
       oss:
-        endpoint: oss-cn-shanghai.aliyuncs.com
+        endpoint: *******
         bucket: weiyunmall
   application:
     name: weiyunmall-third-party
