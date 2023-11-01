@@ -24,6 +24,7 @@
         <module>weiyunmall-common</module>
         <module>weiyunmall-gateway</module>
         <module>weiyunmall-search</module>
+        <module>weiyunmall-flashsale</module>
     </modules>
     
 </project>

@@ -20,6 +20,7 @@
         <module name="weiyunmall-search" />
         <module name="weiyunmall-product" />
         <module name="weiyunmall-gateway" />
+        <module name="weiyunmall-flashsale" />
         <module name="renren-generator" />
       </profile>
     </annotationProcessing>
